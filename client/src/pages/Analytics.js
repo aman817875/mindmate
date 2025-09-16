@@ -16,10 +16,6 @@ const Analytics = () => {
   const [journalStats, setJournalStats] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetchAnalytics();
-  }, [timeRange, fetchAnalytics]);
-
   const fetchAnalytics = useCallback(async () => {
     try {
       const [moodResponse, journalResponse] = await Promise.all([
@@ -35,6 +31,10 @@ const Analytics = () => {
       setLoading(false);
     }
   }, [timeRange]);
+
+  useEffect(() => {
+    fetchAnalytics();
+  }, [timeRange, fetchAnalytics]);
 
   const timeRanges = [
     { value: '7', label: 'Last 7 days' },

@@ -57,11 +57,6 @@ const Journal = () => {
     'hobby', 'learning', 'gratitude', 'challenge', 'success', 'reflection'
   ];
 
-  useEffect(() => {
-    fetchEntries();
-    fetchInsights();
-  }, [fetchEntries]);
-
   const fetchEntries = useCallback(async () => {
     try {
       const params = new URLSearchParams({
@@ -82,6 +77,11 @@ const Journal = () => {
       setLoading(false);
     }
   }, [currentPage, searchTerm, selectedMood]);
+
+  useEffect(() => {
+    fetchEntries();
+    fetchInsights();
+  }, [fetchEntries]);
 
   const fetchInsights = async () => {
     try {

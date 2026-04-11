@@ -111,21 +111,6 @@ mindmate/
    npm run client  # Frontend on port 3000
    ```
 
-### Production Deployment
-
-#### Heroku Deployment
-1. Create a Heroku app
-2. Set environment variables
-3. Deploy:
-   ```bash
-   git push heroku main
-   ```
-
-#### Railway Deployment
-1. Connect GitHub repository
-2. Add environment variables
-3. Deploy automatically
-
 ## 🔧 API Endpoints
 
 ### Authentication
@@ -290,7 +275,7 @@ For support, email support@mindmate.app or join our community discussions.
 
 ## 🔗 Links
 
-- [Live Demo](https://mindmate-app.herokuapp.com)
+- [Live Demo](https://mindmate-mui3.onrender.com/)
 - [Documentation](https://docs.mindmate.app)
 - [API Reference](https://api.mindmate.app/docs)
 

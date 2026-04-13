@@ -16,7 +16,7 @@ import {
   Settings
 } from 'lucide-react';
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const { user, logout, isAuthenticated } = useAuth();
